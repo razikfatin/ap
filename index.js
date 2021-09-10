@@ -1,3 +1,7 @@
-import firebaseService from './firebaseService.js';
+import mock from './mock';
+import './db/analytics-dashboard-db';
+//import './db/project-dashboard-db';
+//import './db/e-commerce-db';
 
-export default firebaseService;
+
+mock.onAny().passThrough();
